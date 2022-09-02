@@ -1,11 +1,11 @@
 {
   "name": "Alphabot-Md",
   "version": "1.1.5",
-  "description": "Alphabot Md, Only update in YouTube ZEEONE OFC",
-  "main": "zeeone.js",
+  "description": "Jer-Md",
+  "main": "jeremi.js",
   "license": "MIT",
   "scripts": {
-    "start": "node zeeone.js"
+    "start": "node jeremi.js"
    },
   "keywords": [
     "whatsapp",
@@ -14,7 +14,7 @@
     "base",
     "baileys-md"
   ],
-  "author": "ZeeoneOfc",
+  "author": "JeremiOfc",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "github:zeeone-ofc/baileys",
