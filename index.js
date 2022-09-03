@@ -1593,7 +1593,7 @@ break
 		await alpha.updateBlockStatus(users, 'unblock').then((res) => m.reply(lang.ok())).catch((err) => m.reply(lang.err()))
 	}
 	break
-            case '---': {
+            case 'kick': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
@@ -1602,7 +1602,7 @@ break
 				await alpha.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(lang.ok())).catch((err) => m.reply(lang.err()))
 				}
 				break
-			case '---': {
+			case 'add': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
@@ -1611,7 +1611,7 @@ break
 				await alpha.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(lang.ok())).catch((err) => m.reply(lang.err()))
 				}
 				break
-			case '---': {
+			case 'promote': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())	
@@ -1952,8 +1952,8 @@ break
 ╰❒ Runtime : ${runtime(process.uptime())}
 
 ╭─❒ 「 Date Info 」 
-├  GRUB BOT : https://chat.whatsapp.com/J9eW6CywsT66Grfd2HKacN
-├  GRUB BOT 2 : https://chat.whatsapp.com/KrI37TPxlZl68q1Uvpnlkn
+├ Masehi : ${week}, ${date}
+├ Hijriah : ${dateIslamic}
 ╰❒
 
 ╭─❒ 「 User Info 」 
@@ -1967,9 +1967,9 @@ break
 ╰❒ Owner : ${isCreator ? 'True' : `False`}
 `	
 const buttojns = [
-  {buttonId: '.command', buttonText: {displayText: ' List Menu'}, type: 1},
-  {buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},
-  {buttonId: '.donasi', buttonText: {displayText: ' Donation'}, type: 1}
+  {buttonId: '.command', buttonText: {displayText: '📖 List Menu'}, type: 1},
+  {buttonId: '.owner', buttonText: {displayText: '🙍‍♂️ Owner'}, type: 1},
+  {buttonId: '.donasi', buttonText: {displayText: '💰 Donation'}, type: 1}
 ]			
 					if(typemenu == 'document'){
 						if(db.data.users[m.sender].registered){
